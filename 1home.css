@@ -1,0 +1,116 @@
+body {
+    background-color:rgb(255, 238, 254);
+}
+
+h1 {
+    color:rgb(231, 108, 129);
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#letrageneral {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+header {
+    background-color: rgb(255, 230, 234);
+    color:azure;
+    padding: 1em;
+}
+
+#seccion1 {
+    background-color: rgb(221, 130, 144);
+    color: white;
+    height: 10%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#li1 {
+    margin-left:30px;
+}
+
+#li2 {
+    margin-left: 60px;
+}
+
+#li3 {
+    margin-left:70px
+}
+
+#wonyoung1 {
+    width: 200px;
+    height:250px;
+}
+
+#wonyoung2 {
+    width: 200px;
+    height:250px;
+}
+
+#cuadro {
+    background-color: antiquewhite;
+    color:black;
+    padding: 1em;
+    height:200px;
+    width: 400px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#seccion2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px; 
+    padding: 20px; 
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+#seccion2 #cuadro {
+    max-width: 400px; 
+}
+
+#seccion2 h2 {
+    margin-bottom: 10px; 
+}
+
+#seccion3 {
+    position: absolute;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: #fff; 
+    padding: 20px; 
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 600px; 
+    width: 80%; 
+    text-align: center; 
+    background-color: antiquewhite;
+    color:black;
+}
+
+#homefinal {
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    gap:100px;
+    display: flex;
+}
+
+a {
+    color: white;
+}
