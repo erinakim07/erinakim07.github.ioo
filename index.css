@@ -8,9 +8,6 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-#letrageneral {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-}
 
 header {
     background-color: rgb(255, 230, 234);
@@ -65,32 +62,113 @@ li {
     margin-left:70px
 }
 
-#contactus {
-    position: absolute;
-    left: 25%; 
-    transform: translate(-50%, -50%);
-    background-color:rgb(245, 245, 245);
-    padding: 10px; 
+#wonyoung1 {
+    width: 200px;
+    height:250px;
+    border-radius: 15px;
+}
+
+#wonyoung2 {
+    width: 200px;
+    height:250px;
+    border-radius: 15px;
+}
+
+#cuadro {
+    background-color:rgb(255, 218, 240);
+    color:black;
+    padding: 1em;
+    height:200px;
+    width: 400px;
+    box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    max-width: 450px; 
+}
+
+#seccion2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px; 
+    padding: 20px; 
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+#seccion2 #cuadro {
+    max-width: 400px; 
+}
+
+#seccion2 h2 {
+    margin-bottom: 10px; 
+}
+
+#seccion3 {
+    position: absolute;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: #fff; 
+    padding: 20px; 
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 600px; 
     width: 80%; 
+    text-align: center; 
+    background-color:rgb(255, 218, 240);
     color:black;
 }
 
-#formulario {
-    position: absolute;
-    left: 25%; 
-    transform: translate(-50%, -50%);
-    background-color:rgb(245, 245, 245);
-    padding: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    max-width: 450px; 
-    width: 80%; 
-    color:black;
+#homefinal {
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    gap:100px;
+    display: flex;
+}
+
+#home1 {
+    border-radius: 15px;
+}
+
+#home2 {
+    border-radius: 15px;
+}
+
+#home3 {
+    border-radius: 15px;
 }
 
 a {
     color: white;
+}
+
+
+#mediosdepago {
+    background-color:rgb(242, 159, 173);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top:8px;
+}
+
+
+#steve {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    gap:15px;
+    display: flex;
+}
+
+#ruggi {
+    margin-left: 20px;
+    color: white;
+}
+
+#steve2 {
+    height: 30px;
+    margin-left: 20px;
+    gap:20px;
+
 }
 
 footer {

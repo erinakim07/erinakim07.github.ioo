@@ -1,10 +1,11 @@
 body {
-    background-color:rgb(255, 238, 254);
+    background-color: rgb(255, 238, 254);
 }
 
+
 h1 {
-    color:rgb(231, 108, 129);
-    text-align:center;
+    color: rgb(231, 108, 129);
+    text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -14,56 +15,119 @@ h1 {
 
 header {
     background-color: rgb(255, 230, 234);
-    color:azure;
+    color: azure;
     padding: 1em;
 }
 
+
 #seccion1 {
-    background-color: rgb(221, 130, 144);
-    color: white;
-    height: 10%;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(221, 130, 144);
+    position: relative;
 }
 
-li {
+#partofme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+#partofme ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    gap: 20px;
+    font-size: large;
+}
+
+#partofme ul li a {
+    text-decoration: none; 
+}
+
+
+#partofme li {
     margin-bottom: 10px;
 }
 
 #li1 {
     margin-left:30px;
+    color:white;
 }
 
 #li2 {
     margin-left: 60px;
+    color:white;
 }
 
 #li3 {
-    margin-left:70px
+    margin-left:70px;
+    color:white;
+}
+
+#julibelu {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+a {
+    color: white;
+}
+
+#carrito {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.carritodecompras {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+#buscadordeproductos {
+    width: 50%;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid rgb(221, 130, 144);
+    border-radius: 5px;
 }
 
 #seccion2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; 
-    padding: 20px; 
+    gap: 20px;
+    padding: 20px;
     line-height: 1.5;
     font-size: 16px;
 }
 
 #seccion2 #cuadro {
-    max-width: 400px; 
+    max-width: 400px;
 }
 
 #seccion2 h2 {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .pau{
@@ -74,7 +138,7 @@ li {
     gap: 20px;
     margin-left: 10px;
     align-items: center;  
-    text-align: center; 
+    text-align: center;
     grid-template-areas:
     "llip1 llip2 llip3"
 }
@@ -102,7 +166,7 @@ li {
     gap: 20px;
     margin-left: 10px;
     align-items: center;  
-    text-align: center; 
+    text-align: center;
     grid-template-areas:
     "eeye1 eeye2 eeye3"
 }
@@ -135,7 +199,7 @@ li {
     gap: 20px;
     margin-left: 10px;
     align-items: center;  
-    text-align: center; 
+    text-align: center;
     grid-template-areas:
     "fface1 fface2 fface3"
 }
@@ -163,10 +227,154 @@ h5 {
     color:rgb(44, 43, 43);
 }
 
-button {
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+img {
+        border-radius: 15px;
+    }
+
+.product button {
+    background-color: rgb(231, 108, 129);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
-a {
-    color: white;
+.product button:hover {
+    background-color: rgb(221, 108, 129);
 }
+
+#cuadrocarrito {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 400px;
+    background-color: white;
+    border: 2px solid rgb(221, 130, 144);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000;
+}
+
+
+#cuadrocarrito h3 {
+    text-align: center;
+}
+
+#productoscarrito {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#productoscarrito li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgb(221, 130, 144);
+}
+
+#productoscarrito img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#total {
+    text-align: right;
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(231, 108, 129);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(221, 108, 129);
+}
+
+footer {
+    background-color: rgb(242, 159, 173);
+    color: white;
+    padding: 15px 0;
+}
+
+#contenido {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: rgb(242, 159, 173);
+}
+
+#metodosdepago {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%; 
+    margin-right: auto; 
+    margin-left:50px;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: auto; 
+}
+
+#metodosdepago h4 {
+    margin-bottom: 10px;
+    color: rgb(197, 74, 94);
+}
+
+#contacto h4 {
+    margin-bottom: 10px;
+    color: rgb(197, 74, 94);
+}
+
+#contacto p {
+    margin: 5px 0;
+}
+
+#steve1 {
+    width: 50px;
+    margin: 5px;
+    padding: 3px;
+}
+
+#steve2 {
+    width: 50px;
+    margin: 5px;
+    padding: 3px;
+}
+
+#steve3 {
+    width: 60px;
+    margin: 5px;
+    padding: 3px;
+}
+
+#steve4 {
+    width: 55px;
+    margin: 5px;
+    padding: 3px;
+}
+
+#steve5 {
+    width: 60px;
+    margin: 5px;
+    padding: 3px;
+}
+

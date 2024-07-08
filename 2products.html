@@ -14,43 +14,54 @@
     <h1>Yeppi's beauty</h1>
 </header>
 
-<section id="letrageneral">
 <section id="seccion1">
-    <ul>
-        <li id="li1"><a href="index.html">Home</a></li>
-        <li id="li2"><a href="2products.html">Products</a></li>
-        <li id="li3"><a href="3contact.html">Contact</a></li>
-    </ul>
+    <div id="partofme">
+        <ul>
+            <li id="li1"><a href="index.html">Home</a></li>
+            <li id="li2"><a href="2products.html">Products</a></li>
+            <li id="li3"><a href="3contact.html">Contact</a></li>
+        </ul>
+        <div id="carrito" onclick="toggleCart()">
+            <svg class="carritodecompras w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+            </svg>
+            <div id="julibelu">0</div>
+        </div>
+    </div>
 </section>
 
 </br>
 </br>
 
+<input type="text" id="buscadordeproductos" placeholder="Search for products...">
+
+</br>
+</br>
 <section id="lipproducts">
     <h3 id="titulo1">Lip products</h3>
 </br>
 </br>
 <div class="pau">
-    <div id="llip1">
+    <div class="product"id="llip1">
         <img src="lip1.jpg" id="lip1" alt="Lip product 1"/>
         <h4>Romand Glasting Color Gloss</h4>
         <h5>Use the new Gloss for juicy, plump, and voluminous <br>lips; it has the perfect texture for your lips.</h5>
         <h4>$32.200,00</h4>
-        <button class="btn-1">Buy</button>
+        <button class="btn-1" onclick="addToCart('Romand Glasting Color Gloss', 32200, 'lip1.jpg')">Add to cart</button>
     </div>
-    <div id="llip2">
+    <div class="product" id="llip2">
         <img src="lip2.jpg" id="lip2" alt="Lip product 2"/>
         <h4>Romand Glasting Water Tint</h4>
         <h5>It has a lightweight texture that keeps your lips <br>hydrated and soft without feeling sticky.</h5>
         <h4>$24.800,00</h4>
-        <button class="btn-2">Buy</button>
+        <button class="btn-2" onclick="addToCart('Romand Glasting Water Tint', 24800, 'lip2.jpg')">Add to cart</button>
     </div>
-    <div id="llip3">
+    <div class="product" id="llip3">
         <img src="lip3.jpg" id="lip3" alt="Lip product 3"/>
         <h4>Romand Glasting Melting Balm</h4>
         <h5>Lip balm that leaves a glossy plump finish that <br>complements a natural makeup.</h5>
         <h4>$23.800,00</h4>
-        <button class="btn-3">Buy</button>
+        <button class="btn-3" onclick="addToCart('Romand Glasting Melting Balm', 23800, 'lip3.jpg')">Add to cart</button>
     </div>
     </div>
 </section>
@@ -64,26 +75,26 @@
 </br>
 
 <div class="pau2">
-    <div id="eeyes1">
+    <div class="product" id="eeyes1">
         <img src="ojos1.jpg" id="eye1" alt="Eye product 1"/>
         <h4>CLIO - Pro Eye Palette Koshort<br>In Seoul Limited Edition</h4>
         <h5>It contains matte, shimmery, and glitter eyeshadows <br>that provide long-lasting wear.</h5>
         <h4>$65.880,00</h4>
-        <button class="btn-4">Buy</button>
+        <button class="btn-4" onclick="addToCart('CLIO Pro Eye Palette Koshort', 65880, 'ojos1.jpg')">Add to cart</button>
     </div>
-    <div id="eeyes2">
+    <div class="product" id="eeyes2">
         <img src="ojos2.jpg" id="eye2" alt="Eye product 2"/>
         <h4>CLIO - Pro Eye Palette Ingeolmi<br>At Home Special Edition</h4>
         <h5>Special edition with a puppy theme, featuring thematic <br>designs on the eyeshadows to add that final touch.</h5>
         <h4>$65.880,00</h4>
-        <button class="btn-5">Buy</button>
+        <button class="btn-5" onclick="addToCart('CLIO Pro Eye Palette Ingeolmi', 65880, 'ojos2.jpg')">Add to cart</button>
     </div>
-    <div id="eeyes3">
+    <div class="product"id="eeyes3">
         <img src="ojos3.png" id="eye3" alt="Eye product 3"/>
         <h4>PERIPERA - All Take Mood Like<br>Palette Peritage Collection</h4>
         <h5>The palette offers shimmery and glitter colors that <br>can be used as eyeshadow, blush, and highlighter.</h5>
         <h4>$73.200,00</h4>
-        <button class="btn-6">Buy</button>
+        <button class="btn-6" onclick="addToCart('PERIPERA All Take Mood Like', 73200, 'ojos3.png')">Add to cart</button>
     </div>
     </div>
 
@@ -96,34 +107,64 @@
 </br>
 
 <div class="pau3">
-    <div id="fface1">
+    <div class="product" id="fface1">
         <img src="face1.jpg" id="face1" alt="Face product 1"/>
         <h4>UNLEASHIA - Don't Touch Glass Pink Cushion</h4>
         <h5>Cushion that provides long-lasting hydration to the skin <br>with perfect coverage and UV protection SPF50+.</h5>
         <h4>$56.040,00</h4>
-        <button class="btn-7">Buy</button>
+        <button class="btn-7" onclick="addToCart('UNLEASHIA Glass Pink Cushion', 56040, 'face1.jpg')">Add to cart</button>
     </div>
-    <div id="fface2">
+    <div class="product" id="fface2">
         <img src="lily.jpg" id="face2" alt="Face product 2"/>
         <h4>LILYBYRED - Luv Beam Cheek Balm Mini</h4>
         <h5>The blush comes in a highly buildable balm <br>formula to add a subtle glow to the cheeks.</h5>
         <h4>$18.900,00</h4>
-        <button class="btn-8">Buy</button>
+        <button class="btn-8" onclick="addToCart('LILYBYRED Luv Beam Cheek Balm', 18900, 'lily.jpg')">Add to cart</button>
     </div>
-    <div id="fface3">
+    <div class="product" id="fface3">
         <img src="clio.jpg" id="face3" alt="Face product 3"/>
         <h4>CLIO - Kill Cover Mesh Glow Cushion</h4>
         <h5>Cushion foundation that covers skin imperfections and <br>other blemishes for smooth and lightweight coverage.</h5>
         <h4>$18.900,00</h4>
-        <button class="btn-9">Buy</button>
+        <button class="btn-9" onclick="addToCart('CLIO Kill Cover Mesh Glow Cushion', 18900, 'clio.jpg')">Add to cart</button>
     </div>
     </div>
 </section>
 
-
 </br>
 </br>
 
+<div id="cuadrocarrito">
+    <h3>Your Cart</h3>
+    <ul id="productoscarrito"></ul>
+    <p id="total">Total: $0</p>
+    <button onclick="buyItems()">Buy</button>
+    <button onclick="toggleCart()">Close</button>
+</div>
 </section>
+
+<footer>
+    <div id="contenido">
+        <div id="metodosdepago">
+            <h4>Payment methods</h4>
+            <div class="payment-images">
+                <img id="steve1" src="steve1.jpg" alt="Método de Pago 1">
+                <img id="steve2" src="steve2.png" alt="Método de Pago 2">
+                <img id="steve3" src="steve3.png" alt="Método de Pago 3">
+                <img id="steve4" src="steve4.png" alt="Método de Pago 4">
+                <img id="steve5" src="steve5.jpg" alt="Método de Pago 5">
+            </div>
+        </div>
+        <div id="contacto">
+            <h4> Contact Us</h4>
+            <p>Tel: +54 911 3947 8992</p>
+            <p>Email: yeppisbeauty@gmail.com</p>
+        </div>
+    </div>
+</footer>
+
+<script src="2products.js">
+</script>
+
 </body>
 </html>
